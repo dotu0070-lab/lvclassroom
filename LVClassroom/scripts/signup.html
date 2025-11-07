@@ -1,0 +1,22 @@
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng ký | LVCLASSROOM</title>
+  <link rel="stylesheet" href="./scripts/styles/main.css">
+</head>
+<body>
+  <form id="signupForm">
+    <h1>Tạo tài khoản</h1>
+    <input id="email" type="email" placeholder="Email" required>
+    <input id="password" type="password" placeholder="Mật khẩu" required>
+    <button type="submit">Đăng ký</button>
+    <p style="text-align:center;margin-top:8px">Đã có tài khoản? <a href="login.html" style="color:var(--primary)">Đăng nhập</a></p>
+  </form>
+
+  <script type="module">
+    import { signup } from "./scripts/auth.js";
+    import { handleFormSubmit } from "./scripts/ui.js";
+    handleFormSubmit("#signupForm", signup);
+  </script>
+</body>
+</html>

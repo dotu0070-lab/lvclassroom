@@ -1,0 +1,87 @@
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVClassroom | Học tập tương tác 3D</title>
+  <link rel="stylesheet" href="scripts/styles/main.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #0a0f24, #1b2855);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero {
+      text-align: center;
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #00b4ff;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.2rem;
+      opacity: 0.85;
+      margin-bottom: 30px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .btn {
+      background-color: #00b4ff;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #007bbd;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+    <h1>LVClassroom</h1>
+    <p>Nền tảng học tập tương tác 3D và thực tế ảo cho học sinh Kon Tum — nơi công nghệ và giáo dục gặp nhau.</p>
+    <div class="btn-group">
+      <button class="btn" onclick="window.location.href='login.html'">Đăng nhập</button>
+      <button class="btn" onclick="window.location.href='signup.html'">Đăng ký</button>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 LVClassroom | Powered by NoeEdTech
+  </footer>
+
+  <!-- Firebase Core -->
+  <script type="module" src="scripts/firebase.js"></script>
+</body>
+</html>
